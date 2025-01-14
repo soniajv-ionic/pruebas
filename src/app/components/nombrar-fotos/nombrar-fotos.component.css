@@ -1,0 +1,28 @@
+.imagenes-container {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .imagen {
+    text-align: center;
+    position: relative;
+  }
+  
+  img {
+    width: 150px;
+    height: 150px;
+    transition: transform 0.3s ease;
+  }
+  
+  img:hover {
+    transform: scale(1.1);
+  }
+  
+  p {
+    margin-top: 10px;
+    font-size: 14px;
+    color: #333;
+  }
+  
