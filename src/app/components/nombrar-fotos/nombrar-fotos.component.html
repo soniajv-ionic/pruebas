@@ -1,18 +1,21 @@
 <div class="imagenes-container">
-    <div class="imagen" (mouseenter)="mostrarTexto(0)" (mouseleave)="ocultarTexto(0)">
-        <img src="god-7778212_640.jpg" alt="Imagen 2" />
-      
-      <p *ngIf="textos[0]">{{ textos[0] }}</p>
-    </div>
-  
-    <div class="imagen" (mouseenter)="mostrarTexto(1)" (mouseleave)="ocultarTexto(1)">
-        <img src="ai-generated-8670827_640.jpg" alt="Imagen 1" />
-      <p *ngIf="textos[1]">{{ textos[1] }}</p>
-    </div>
-  
-    <div class="imagen" (mouseenter)="mostrarTexto(2)" (mouseleave)="ocultarTexto(2)">
-      <img src="hades-historia-rey-inframundo-mitologia-griega_cpwjig.webp" alt="Imagen 3" />
-      <p *ngIf="textos[2]">{{ textos[2] }}</p>
-    </div>
+  <div class="imagen" (mouseenter)="mostrarTexto(0)" (mouseleave)="ocultarTexto(0)">
+    <img src="god-7778212_640.jpg" alt="Zeus" />
+    <!-- Texto debajo de la imagen 1 -->
+    <p *ngIf="textoVisible[0]">{{ textos[0] }}</p>
   </div>
+
+  <div class="imagen" (mouseenter)="mostrarTexto(1)" (mouseleave)="ocultarTexto(1)">
+    <img src="ai-generated-8670827_640.jpg" alt="Poseidón" />
+    <!-- Texto debajo de la imagen 2 -->
+    <p *ngIf="textoVisible[1]">{{ textos[1] }}</p>
+  </div>
+
+  <div class="imagen" (mouseenter)="mostrarTexto(2)" (mouseleave)="ocultarTexto(2)">
+    <img src="hades-historia-rey-inframundo-mitologia-griega_cpwjig.webp" alt="Hades" />
+    <!-- Texto debajo de la imagen 3 -->
+    <p *ngIf="textoVisible[2]">{{ textos[2] }}</p>
+  </div>
+</div>
+
   

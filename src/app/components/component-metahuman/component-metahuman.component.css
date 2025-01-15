@@ -1,0 +1,6 @@
+.introduce-datos {
+    display: flex;
+    flex-direction: column;  /* Hace que los elementos se alineen de arriba hacia abajo */
+    gap: 10px;  /* Espacio entre los inputs */
+    width: 50%;
+  }

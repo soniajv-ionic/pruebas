@@ -1,0 +1,29 @@
+.informacion {
+    background-color: #f4f4f4; /* Fondo claro */
+    border-radius: 12px; /* Bordes redondeados */
+    padding: 20px; /* Espaciado interno */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra para darle profundidad */
+    max-width: 700px; /* Tamaño máximo del bloque */
+    margin: 20px auto; /* Centrar el bloque */
+    font-family: Arial, sans-serif; /* Fuente limpia */
+  }
+  
+  .informacion h1 {
+    font-size: 24px;
+    color: #333;
+    text-align: center; /* Centrar el título */
+    margin-bottom: 15px; /* Espaciado inferior */
+  }
+  
+  .informacion h2, .informacion h3 {
+    color: #555; /* Colores de texto más suaves */
+    margin: 10px 0; /* Espaciado superior e inferior */
+  }
+  
+  .informacion img {
+    display: block;
+    margin: 20px auto; /* Centrar la imagen */
+    border-radius: 8px; /* Bordes redondeados para la imagen */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Sombra ligera en la imagen */
+  }
+  

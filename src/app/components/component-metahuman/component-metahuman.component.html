@@ -1,0 +1,9 @@
+<div class="introduce-datos">
+    <input type="text" placeholder="Nombre Real" [(ngModel)]="nombreReal" />
+    <input type="text" placeholder="Identidad Secreta" [(ngModel)]="identidadSecreta" />
+    <input type="text" placeholder="Imagen" [(ngModel)]="urlImagen" />
+
+</div>
+<div>
+    <app-component-meta-info nombre={{nombreReal}} identidad={{identidadSecreta}} url={{urlImagen}}></app-component-meta-info>
+</div>

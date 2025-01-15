@@ -1,28 +1,33 @@
 import { Component } from '@angular/core';
+import { CommonModule } from '@angular/common';
 
 @Component({
   selector: 'app-nombrar-fotos',
   standalone: true,
-  imports: [],
+  imports: [CommonModule],
   templateUrl: './nombrar-fotos.component.html',
   styleUrl: './nombrar-fotos.component.css'
 })
-export class NombrarFotosComponent {
-  textos: string[] = ['Zeus', 'Poseidon', 'Hades'];
 
-  // Función para mostrar el texto al hacer hover
-  mostrarTexto(index: number): void {
-    if (index === 0) {
-      this.textos[0] = 'Texto de la imagen 1';
-    } else if (index === 1) {
-      this.textos[1] = 'Texto de la imagen 2';
-    } else if (index === 2) {
-      this.textos[2] = 'Texto de la imagen 3';
-    }
+export class MiComponenteComponent {
+
+  textos: string[] = [
+    'Esta es la imagen de Zeus.',
+    'Esta es la imagen de Poseidón.',
+    'Esta es la imagen de Hades.'
+  ];
+
+
+  textoVisible: boolean[] = [false, false, false];
+
+
+  mostrarTexto(index: number) {
+    this.textoVisible[index] = true;
   }
 
-  // Función para ocultar el texto cuando el ratón deja de estar sobre la imagen
-  ocultarTexto(index: number): void {
-    this.textos[index] = '';
+
+  ocultarTexto(index: number) {
+    this.textoVisible[index] = false;
   }
 }
+
